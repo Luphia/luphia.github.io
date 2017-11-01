@@ -7,3 +7,8 @@
 ## 而且我還留了一手 websocket 後端程式不公開喔 ##
 
 ## 可惡只好計劃調整了 ##
+- [Web3.js](https://github.com/ethereum/web3.js/)
+- [Ethjs](https://github.com/ethjs/ethjs)
+- [JSON-RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC)
+  - eth_getStorageAt
+  - 
