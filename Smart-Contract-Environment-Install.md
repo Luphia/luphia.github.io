@@ -18,7 +18,13 @@ base_path = "/home/ubuntu/Baliv-Parity"
 port = 30300
 
 [mining]
+uthor = "0x582f459aa7d9c16df55e42bcca3efefd968b42d3"
+engine_signer = "0x582f459aa7d9c16df55e42bcca3efefd968b42d3"
 
+[account]
+unlock = ["0x582f459aa7d9c16df55e42bcca3efefd968b42d3"]
+password = ["/PATH/TO/PASSWORD/FILE"]
+keys_iterations = 10240
 
 [rpc]
 port = 8545
