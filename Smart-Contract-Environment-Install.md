@@ -4,8 +4,44 @@ bash <(curl https://get.parity.io -kL)
 ```
 
 ## Docs ##
-https://github.com/paritytech/parity/wiki/Setup
-https://github.com/paritytech/parity/wiki/Configuring-Parity
+https://github.com/paritytech/parity/wiki/Setup  
+https://github.com/paritytech/parity/wiki/Configuring-Parity  
+
+## Genesis ##
+```json
+{
+    "name": "Baliv-Chain",
+    "engine": {
+        "authorityRound": {
+            "params": {
+                "gasLimitBoundDivisor": "0x400",
+                "stepDuration": "1",
+                "validators" : {
+                    "list": []
+                }
+            }
+        }
+    },
+    "params": {
+        "maximumExtraDataSize": "0x20",
+        "minGasLimit": "0x5208",
+        "networkID" : "0x1"
+    },
+    "genesis": {
+        "seal": {
+            "authorityRound": {
+                "step": "0x0",
+                "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+            }
+        },
+        "difficulty": "0x20000",
+        "gasLimit": "0x5B8D80"
+    },
+    "accounts": {
+
+    }
+}
+```
 
 ### 啟動parity on kovan ###
 parity --chain kovan --port 30303 --jsonrpc-port 8545 --ui-port 8180 --dapps-port 8080 --jsonrpc-apis web3,eth,net,personal,parity,parity_set,traces,rpc,parity_accounts
