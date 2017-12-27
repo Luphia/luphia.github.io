@@ -7,6 +7,30 @@ bash <(curl https://get.parity.io -kL)
 https://github.com/paritytech/parity/wiki/Setup  
 https://github.com/paritytech/parity/wiki/Configuring-Parity  
 
+## config.toml ##
+path = /home/ubuntu/snap/parity/6787/.local/share/io.parity.ethereum/config.toml
+```
+[parity]
+chain = "dev"
+base_path = "/home/ubuntu/Baliv-Parity/"
+
+[network]
+port = 30300
+
+[mining]
+
+
+[rpc]
+port = 8545
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+
+[ui]
+port = 8180
+
+[jsonrpc]
+port = 8080
+```
+
 ## Genesis ##
 ```json
 {
