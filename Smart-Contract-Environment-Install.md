@@ -27,8 +27,8 @@ apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc
 [ui]
 port = 8180
 
-[jsonrpc]
-port = 8080
+[dapps]
+jsonrpc-port = 8080
 ```
 
 ## Genesis ##
