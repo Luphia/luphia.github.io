@@ -4,8 +4,8 @@ bash <(curl https://get.parity.io -kL)
 ```
 
 ## Docs ##
+https://github.com/paritytech/parity/wiki/Setup
 https://github.com/paritytech/parity/wiki/Configuring-Parity
-
 
 ### 啟動parity on kovan ###
 parity --chain kovan --port 30303 --jsonrpc-port 8545 --ui-port 8180 --dapps-port 8080 --jsonrpc-apis web3,eth,net,personal,parity,parity_set,traces,rpc,parity_accounts
