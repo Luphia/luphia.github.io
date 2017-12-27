@@ -12,7 +12,7 @@ path = /home/ubuntu/snap/parity/6787/.local/share/io.parity.ethereum/config.toml
 ```
 [parity]
 chain = "dev"
-base_path = "/home/ubuntu/Baliv-Parity/"
+base_path = "/home/ubuntu/Baliv-Parity"
 
 [network]
 port = 30300
