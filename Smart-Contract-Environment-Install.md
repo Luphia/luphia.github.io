@@ -25,7 +25,11 @@ port = 8545
 apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
 
 [ui]
+force = false
+disable = false
 port = 8180
+interface = "127.0.0.1"
+path = "$HOME/Baliv-Parity/signer"
 
 [dapps]
 jsonrpc-port = 8080
@@ -38,7 +42,6 @@ jsonrpc-port = 8080
     "engine": {
         "authorityRound": {
             "params": {
-                "gasLimitBoundDivisor": "0x400",
                 "stepDuration": "1",
                 "validators" : {
                     "list": []
@@ -47,6 +50,7 @@ jsonrpc-port = 8080
         }
     },
     "params": {
+        "gasLimitBoundDivisor": "0x400",
         "maximumExtraDataSize": "0x20",
         "minGasLimit": "0x5208",
         "networkID" : "0x1"
