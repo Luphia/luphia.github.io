@@ -44,7 +44,7 @@ force = false
 disable = false
 port = 8180
 interface = "0.0.0.0"
-path = "$HOME/Baliv-Parity/signer"
+path = "/home/ubuntu/Baliv-Parity/signer"
 
 [dapps]
 jsonrpc-port = 8080
@@ -85,6 +85,9 @@ jsonrpc-port = 8080
     }
 }
 ```
+
+### create account (key) ###
+parity account new --chain /PATH/TO/GENESIS --keys-path /PATH/TO/KEY/FOLDERS
 
 ### 啟動parity on kovan ###
 parity --chain kovan --port 30303 --jsonrpc-port 8545 --ui-port 8180 --dapps-port 8080 --jsonrpc-apis web3,eth,net,personal,parity,parity_set,traces,rpc,parity_accounts
