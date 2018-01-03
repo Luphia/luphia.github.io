@@ -1,3 +1,9 @@
+## Pre-Install ##
+```
+sudo apt-get update
+sudo apt-get install openssl libtool autoconf automake uuid-dev build-essential gcc g++ python-software-properties unzip make git libcap2-bin -y
+```
+
 ## Install Parity ##
 ```
 bash <(curl https://get.parity.io -kL)
