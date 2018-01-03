@@ -14,6 +14,7 @@ https://github.com/paritytech/parity/wiki/Setup
 https://github.com/paritytech/parity/wiki/Configuring-Parity  
 
 ## config.toml ##
+chain = "/home/ubuntu/Baliv-Parity/genesis.json"
 path = /home/ubuntu/snap/parity/6787/.local/share/io.parity.ethereum/config.toml
 ```
 [parity]
