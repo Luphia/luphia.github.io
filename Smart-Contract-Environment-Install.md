@@ -13,6 +13,29 @@ bash <(curl https://get.parity.io -kL)
 https://github.com/paritytech/parity/wiki/Setup  
 https://github.com/paritytech/parity/wiki/Configuring-Parity  
 
+## mainnet.toml ##
+```
+[parity]
+mode = "active"
+base_path = "/home/ubuntu/baliv-parity/"
+
+[footprint]
+tracing = "off"
+pruning = "fast"
+db_compaction = "ssd"
+cache_size = 4096
+
+[network]
+port = 30303
+min_peers = 50
+max_peers = 100
+
+[rpc]
+interface = "0.0.0.0"
+port = 8545
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+```
+
 ## config.toml ##
 chain = "/home/ubuntu/Baliv-Parity/genesis.json"
 path = /home/ubuntu/snap/parity/6787/.local/share/io.parity.ethereum/config.toml
