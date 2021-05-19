@@ -1,6 +1,6 @@
 - find new disk
 ```shell
-ls /dev/
+lsblk
 ```
 
 - check disk partition
